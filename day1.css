@@ -1,0 +1,56 @@
+ Day1: Introduction to CSS
+
+What is CSS?
+CSS stands for Cascading Style Sheets.
+It is used to style and layout web pages — for example, changing fonts, colors, spacing, positioning, animations, and much more.
+
+Why CSS?
+While HTML gives structure to your webpage, CSS makes it visually appealing.
+Without CSS, websites look plain and dull.
+
+Basic Syntax of CSS:
+
+selector {
+  property: value;
+}
+
+Example:
+
+h1 {
+  color: blue;
+  font-size: 36px;
+}
+This will turn all <h1> headings blue and increase their font size to 36px.
+
+Ways to Add CSS:
+
+Inline CSS (inside HTML tag)
+
+Internal CSS (inside <style> tag in HTML <head>)
+
+External CSS (linked .css file — most preferred)
+
+Example of Inline CSS:
+
+<h1 style="color: green;">Welcome</h1>
+
+Example of Internal CSS:
+
+<head>
+  <style>
+    h1 {
+      color: red;
+    }
+  </style>
+</head>
+
+Example of External CSS:
+index.html
+
+<link rel="stylesheet" href="style.css">
+style.css
+
+
+h1 {
+  color: purple;
+}
