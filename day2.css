@@ -1,0 +1,40 @@
+Day 2: CSS Selectors
+CSS selectors are patterns used to select the HTML elements you want to style.
+
+Types of Selectors:
+Universal Selector (*)
+Applies styles to all elements.
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+Element Selector (tagname)
+Targets specific HTML tags.
+
+
+p {
+  color: green;
+}
+Class Selector (.classname)
+Used to style multiple elements with the same class.
+
+
+.highlight {
+  background-color: yellow;
+}
+ID Selector (#idname)
+Used to style a unique element.
+
+
+#main-heading {
+  font-size: 24px;
+}
+Group Selector (element1, element2)
+Applies the same style to multiple elements.
+
+
+h1, h2, h3 {
+  font-family: 'Segoe UI', sans-serif;
+}
