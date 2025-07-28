@@ -1,0 +1,36 @@
+Day 6: CSS Box Model & Positioning
+The CSS Box Model is the foundation of layout in CSS. Every element on a page is a rectangular box consisting of the following parts:
+
+📦 Box Model Components:
+Content – Actual text or images
+
+Padding – Space inside the border, around the content
+
+Border – The edge of the box
+
+Margin – Space outside the border, between elements
+
+div {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid black;
+}
+📍 CSS Positioning
+Positioning allows you to control how elements are placed in the document.
+
+✅ Position Values:
+static – Default (normal flow)
+
+relative – Offset relative to normal position
+
+absolute – Positioned relative to nearest positioned ancestor
+
+fixed – Fixed to the viewport
+
+sticky – Scrolls until a threshold, then sticks
+
+.box {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
