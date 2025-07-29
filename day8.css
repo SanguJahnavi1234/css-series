@@ -1,0 +1,55 @@
+Day 8: CSS Grid
+What is CSS Grid?
+CSS Grid is a powerful 2-dimensional layout system for building web page structures. Unlike Flexbox (which is one-directional), Grid works with both rows and columns.
+
+💡 Properties You Learn Today:
+display: grid
+
+Turns an element into a grid container.
+
+grid-template-columns / grid-template-rows
+
+Defines the structure of your grid.
+
+gap (or grid-gap)
+
+Adds space between rows and columns.
+
+grid-column / grid-row
+
+Controls how many columns or rows an item should span.
+
+grid-area
+
+Names and places grid items in custom areas.
+
+🔹 Sample Code:
+
+<style>
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.box {
+  background-color: #87cefa;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+
+<div class="container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+  <div class="box">Box 4</div>
+  <div class="box">Box 5</div>
+  <div class="box">Box 6</div>
+</div>
+📌 Use Cases:
+Gallery layouts
+
+Complex dashboards
+
+Landing pages with sectioned designs
+
