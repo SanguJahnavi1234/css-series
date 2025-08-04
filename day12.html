@@ -1,0 +1,90 @@
+<!-- Day 12: CSS Flexbox vs Grid – Comparison -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Day 12: Flexbox vs Grid</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .flex-container, .grid-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .flex-items {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .grid-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #007bff;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .grid-items {
+        grid-template-columns: 1fr;
+      }
+
+      .flex-items {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Day 12: Flexbox vs Grid</h1>
+  <div class="container">
+    <div class="flex-container">
+      <h2>Flexbox Layout</h2>
+      <div class="flex-items">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <h2>Grid Layout</h2>
+      <div class="grid-items">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
